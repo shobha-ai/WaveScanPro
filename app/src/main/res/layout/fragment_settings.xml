@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <Switch
+        android:id="@+id/switch_battery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Battery Optimization"
+        android:textColor="@color/textColor" />
+
+    <Switch
+        android:id="@+id/switch_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signal Alerts"
+        android:textColor="@color/textColor" />
+
+    <Switch
+        android:id="@+id/switch_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="High Contrast Mode"
+        android:textColor="@color/textColor" />
+
+</LinearLayout>
