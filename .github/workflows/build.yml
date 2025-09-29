@@ -19,10 +19,15 @@ jobs:
         distribution: 'temurin'
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
+    - name: Ensure Gradle Wrapper JAR
+      run: |
+        if [ ! -s gradle/wrapper/gradle-wrapper.jar ]; then
+          curl -L -o gradle/wrapper/gradle-wrapper.jar https://repo.gradle.org/artifactory/libs-release-bintray/gradle/wrapper/gradle-wrapper.jar
+        fi
     - name: Build with Gradle
       run: ./gradlew build --stacktrace
       env:
-        GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx2g"
+        GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx4g"
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
