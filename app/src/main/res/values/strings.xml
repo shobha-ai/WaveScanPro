@@ -1,10 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">WaveScan Pro</string>
-    <string name="tab_wifi">Wi-Fi</string>
-    <string name="tab_bluetooth">Bluetooth</string>
-    <string name="tab_cellular">Cellular</string>
-    <string name="tab_logs">Logs</string>
-    <string name="tab_settings">Settings</string>
-    <string name="search_hint">Search</string>
-    <string name="refresh">Refresh</string>
+    <string name="app_name">WaveScanPro</string>
 </resources>
